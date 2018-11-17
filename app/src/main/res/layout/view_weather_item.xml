@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            tools:text="Main" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main"
+            android:drawableLeft="@mipmap/tempirature_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            tools:text="Temperature" />
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temperature"
+            android:drawableLeft="@mipmap/wind_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            tools:text="Wind" />
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wind"
+            android:drawableLeft="@mipmap/humidity_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            tools:text="Humidity" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="cairo">cairo</string>
+    <string name="alex">alex</string>
+    <string name="giza">giza</string>
+    <string name="aswan">aswan</string>
+    <string name="luxor">luxor</string>
+    <string name="error">Error!</string>
+</resources>
