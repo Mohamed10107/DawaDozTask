@@ -31,18 +31,35 @@
             android:layout_marginBottom="10dp"
             android:ellipsize="end"
             android:gravity="center"
+            android:maxLines="1"
             android:textColor="#FFFFFF"
             android:textSize="17sp"
             tools:text="Main" />
 
         <TextView
-            android:id="@+id/temperature"
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/main"
-            android:drawableLeft="@mipmap/tempirature_icon"
+            android:drawableLeft="@mipmap/calendar_icon"
+            android:drawablePadding="10dp"
             android:ellipsize="end"
             android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            tools:text="Date" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:drawableLeft="@mipmap/temperature_icon"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
             android:textColor="#FFFFFF"
             android:textSize="17sp"
             tools:text="Temperature" />
@@ -53,8 +70,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/temperature"
             android:drawableLeft="@mipmap/wind_icon"
+            android:drawablePadding="10dp"
             android:ellipsize="end"
             android:gravity="center_vertical"
+            android:maxLines="1"
             android:textColor="#FFFFFF"
             android:textSize="17sp"
             tools:text="Wind" />
@@ -65,8 +84,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/wind"
             android:drawableLeft="@mipmap/humidity_icon"
+            android:drawablePadding="10dp"
             android:ellipsize="end"
             android:gravity="center_vertical"
+            android:maxLines="1"
             android:textColor="#FFFFFF"
             android:textSize="17sp"
             tools:text="Humidity" />

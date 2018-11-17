@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.dawadoz.dawadoztask.R;
 import com.dawadoz.dawadoztask.model.entity.Weather;
+import com.dawadoz.dawadoztask.utils.DateFormatter;
 import com.dawadoz.dawadoztask.utils.Views;
 import java.util.ArrayList;
 
@@ -46,6 +47,7 @@ public class WeathersAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
 		Views.ImageLoader.load(context, viewHolder.image, item.icon);
 		viewHolder.main.setText(item.main);
+		viewHolder.date.setText(DateFormatter.format(item.date));
 		viewHolder.temperature.setText(item.minTemperature.concat("°C - ".concat(item.maxTemperature.concat("°C"))));
 		viewHolder.wind.setText(item.speed.concat("km/h"));
 		viewHolder.humidity.setText(item.humidity);
@@ -65,13 +67,14 @@ public class WeathersAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 	public class ViewHolder extends RecyclerView.ViewHolder
 	{
 		ImageView image;
-		TextView main, temperature, wind, humidity;
+		TextView main, date, temperature, wind, humidity;
 
 		ViewHolder(View itemView)
 		{
 			super(itemView);
 			image = itemView.findViewById(R.id.image);
 			main = itemView.findViewById(R.id.main);
+			date = itemView.findViewById(R.id.date);
 			temperature = itemView.findViewById(R.id.temperature);
 			wind = itemView.findViewById(R.id.wind);
 			humidity = itemView.findViewById(R.id.humidity);

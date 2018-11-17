@@ -45,7 +45,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="paddingPercent" value="15" />
+                                                <entry key="paddingPercent" value="25" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -58,8 +58,9 @@
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="backgroundColor" value="000000" />
                                       <entry key="cropped" value="true" />
-                                      <entry key="iconShape" value="CIRCLE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/weathercock(2).png" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/calendar.png" />
+                                      <entry key="outputName" value="calendar_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
